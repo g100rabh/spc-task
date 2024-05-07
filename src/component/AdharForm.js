@@ -19,6 +19,12 @@ const AadharForm = ({ onSubmit }) => {
     e.preventDefault();
     const uid = uidCreate();
     onSubmit({ ...formData, uid, length: uid.length });
+    setFormData({
+      fullName: "",
+      dob: "",
+      address: "",
+      contact: "",
+    });
   };
 
   return (
