@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AadharForm from "./component/AdharForm";
 
 function App() {
+  function uidCreate() {
+    let uid = "";
+    const date = Date.now();
+    const digits = "0123456789";
+    const str = date.toString();
+    for (let i = str.length - 1; i > 9; i--) {
+      console.log(str[i]);
+      uid += digits[str[i]];
+    }
+    return uid + str;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      Hi
+      <button onClick={uidCreate}>Click</button>
     </div>
   );
 }
