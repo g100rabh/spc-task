@@ -21,7 +21,7 @@ const AadharCard = ({ data }) => {
       </p>
       <p>
         <span className={classes.label}>UID:</span>{" "}
-        <span className={classes.uidCon}>{uid}</span>
+        <span className={classes.uidCon}>{uid.replace(/(.{4})/g, "$1 ")}</span>
       </p>
     </div>
   );
