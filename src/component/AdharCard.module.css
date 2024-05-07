@@ -1,5 +1,5 @@
 .aadhar-card {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -31,10 +31,11 @@
 }
 .aadhar-card img {
   width: 35%;
+  margin-right: 10px;
 }
 
 .adhar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
 }
